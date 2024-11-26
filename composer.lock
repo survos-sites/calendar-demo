@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "79e1da5172793ee95dcfeb544b9b04ab",
+    "content-hash": "6f91d99815092544043302f72de4df9d",
     "packages": [
         {
             "name": "composer/semver",
@@ -7355,6 +7355,66 @@
             "time": "2024-09-25T14:20:29+00:00"
         },
         {
+            "name": "tattali/calendar-bundle",
+            "version": "7.x-dev",
+            "dist": {
+                "type": "path",
+                "url": "/home/tac/g/tacman/CalendarBundle",
+                "reference": "f0267d5855fb36fcdc3128576043da374ee26356"
+            },
+            "require": {
+                "ext-json": "*",
+                "php": ">=8.2",
+                "symfony/dependency-injection": "^7.0",
+                "symfony/event-dispatcher": "^7.0",
+                "symfony/framework-bundle": "^7.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^3.54",
+                "phpstan/phpstan": "^1.10",
+                "phpunit/phpunit": "^11.0",
+                "symfony/dotenv": "^7.0",
+                "symfony/phpunit-bridge": "^7.0",
+                "symfony/yaml": "^7.0"
+            },
+            "suggest": {
+                "doctrine/mongodb-odm-bundle": "To support MongoDB.",
+                "symfony/orm-pack": "To support Doctrine ORM and Migration."
+            },
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-4": {
+                    "CalendarBundle\\": "src/"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "CalendarBundle\\Tests\\": "tests/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Théo Attali",
+                    "email": "theoattali@gmail.com",
+                    "homepage": "https://theoattali.fr"
+                }
+            ],
+            "description": "Provides event calendar for your Symfony 5+ project. Compatible with API like Google Calendar.",
+            "homepage": "https://github.com/tattali/CalendarBundle",
+            "keywords": [
+                "calendar",
+                "fullcalendar",
+                "symfony",
+                "symfony calendar"
+            ],
+            "transport-options": {
+                "relative": false
+            }
+        },
+        {
             "name": "twig/extra-bundle",
             "version": "v3.15.0",
             "source": {
@@ -9837,7 +9897,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {},
+    "stability-flags": {
+        "tattali/calendar-bundle": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
