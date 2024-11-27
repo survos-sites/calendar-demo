@@ -33,10 +33,4 @@ class EventSubscriber
         // ...
     }
 
-    public static function getSubscribedEvents(): array
-    {
-        return [
-            'DataEvent' => 'onDataEvent',
-        ];
-    }
 }
