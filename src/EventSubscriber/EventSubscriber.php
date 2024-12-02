@@ -19,16 +19,23 @@ class EventSubscriber
         // You may want to make a custom query from your database to fill the calendar
 
         $setDataEvent->addEvent(new Event(
-            'Event 1',
-            new \DateTime('Tuesday this week'),
-            new \DateTime('Wednesdays this week')
+            'workout',
+            new \DateTime('today 7AM'),
+            new \DateTime('today 8AM'),
+        ));
+
+        $setDataEvent->addEvent(new Event(
+            'breakfast with mom',
+            new \DateTime('tomorrow 10AM'),
+            new \DateTime('tomorrow 11AM'),
         ));
 
         // If the end date is null or not defined, it creates a all day event
         $setDataEvent->addEvent(new Event(
-            'All day event',
+            'Friday fast',
             new \DateTime('Friday this week')
         ));
+
 
         // ...
     }
